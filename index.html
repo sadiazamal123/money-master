@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Princes Bank</title>
+</head>
+<body>
+    <!-- Header Section-->
+    <header class="header container"> 
+        <div class="logo">
+            <!-- Logo Area -->
+            <h1 class="logo-text">Princes Bank</h1>
+        </div>
+    </header>
+    <!-- Main Area  -->
+    <div class="main-area container">
+        <!-- Image -->
+        <div class="img">
+            <img src="image/princes-bank.jpg" width="100%" height="100%" alt="">
+        </div>
+        <!-- Calculations -->
+        <div class="calculation">
+            <h1 class="incomeTitle">Income</h1>
+            <!-- Income label and input -->
+            <label for="">Income :</label>
+            <input  id="incomeInput" class="calculate-inputs" type="number">
+            <h1 class="expensesTitle">Expenses</h1>
+            <!-- Food label and input -->
+            <label for="">Food :</label>
+            <input   id="foodInput" class="calculate-inputs" type="number">
+            <!-- Rent label and input -->
+            <label for="">Rent :</label>
+            <input  id="rentInput" class="calculate-inputs" type="number">
+            <!-- Clothes label and input -->
+            <label for="">Clothes :</label>
+            <input  id="clothersInput" class="calculate-inputs" type="number">
+            <!-- Calculate button -->
+            <button class="calculate" id="calculateBtn">Calculate</button>
+            <!-- Total expenses and Balance -->
+            <h1 id="totalExpenses"></h1>
+            <h1 id="balanceField"></h1>
+            <!-- Save percent section -->
+            <div class="save-div">
+                <label for="">Save</label>
+                <input type="number"  id="percentInput">
+                <p>%</p>
+                <button class="save" id="saveBtn">Save</button>
+            </div>
+            <!-- Saving amount and remaining balance-->
+            <h1 id="savingAmount"></h1>
+            <h1 id="remBalance"></h1>
+        </div>
+    </div>
+    <script src="js/calculations.js"></script>
+</body>
+</html>

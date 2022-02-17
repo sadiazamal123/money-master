@@ -1,0 +1,168 @@
+
+/* Reset CSS */
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 48px;
+}
+
+/* Container */
+.container{
+    max-width: 80%;
+    margin: auto;
+}
+/* Header Section*/
+.header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+/* Logo styles */
+.logo{
+    text-align: center;
+}
+
+.logo-text{
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(44, 44, 44);
+}
+
+
+/* Main area */
+.main-area{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+/* Area styles */
+.incomeTitle,.expensesTitle{
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* All styles for label*/
+label{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.img{
+    width: 60%;
+}
+.img img{
+    border-radius: 6px;
+}
+/* Calculate area  */
+/* Input styles */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.calculate-inputs{
+    width: 200px;
+    background-color: rgba(0,0,0,.1);
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+.calculation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding: 30px;
+    background-color: rgba(220,220,220,.5);
+    border-radius: 5px;
+}
+#totalExpenses,#balanceField,#savingAmount,#remBalance{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+}
+/* Calculate button style */
+.calculate{
+    padding: 10px;
+    width: 150px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(161, 11, 231, 0.7);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Save percent area */
+.save-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+/* save percent input */
+#percentInput{
+    width: 100px;
+    padding: 10px;
+    background-color: rgba(0,0,0,.1);
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+/* Save button */
+.save{
+    padding: 10px;
+    width: 100px;
+    margin: auto;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(161, 11, 231, 0.7);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Responsive CSS*/
+/* 1024px  */
+@media ( max-width : 1024px){
+    .calculation{
+        width: 40%;
+    }
+    .logo{
+        width: 100%;
+    }
+}
+/* 640px */
+@media ( max-width : 640px){
+    .main-area{
+        flex-direction: column;
+    }
+    .img{
+        width: 100%;
+    }
+    .calculation{
+        width: 100%;
+        padding: 0%;
+        padding-bottom: 30px;
+        padding-top: 25px;
+    }
+}
